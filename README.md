@@ -46,7 +46,7 @@ DESCRIPTION
     If all backends return a 2xx HTTP status, this will respond with 200 "OK".
     If all backends return valid HTTP responses, but any backend returns a
     non-2xx status, this will respond with 503 "Service Unavailable". If any
-    backend produced an HTTP error, this will respond with 502 "Bad Gateway". 
+    backend produces an HTTP error, this will respond with 502 "Bad Gateway". 
 
     Backends are probed synchronously when an incoming request is received, but
     backends may be probed in parallel to each other.
